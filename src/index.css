@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Brookshire";
+  src: url("../fonts/EFCOBrookshireRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #7d4ab3;
+  --color-secondary: #c25968;
+  --color-tertiary: #efe1c7;
+  --color-assistant: #b66e82;
+  --color-beige: #efe1c7;
+  --color-black: #202221;
+  --color-black-1: #20222150;
+  --color-black-2: #20222180;
+  --color-black-3: #202221aa;
+  --color-black-4: #202221cc;
+  --font-header: "Brookshire";
+  --font-title: "Caveat Brush", cursive;
+  --font-body: "M PLUS Rounded 1c", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+}
