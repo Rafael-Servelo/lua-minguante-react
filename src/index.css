@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Brookshire";
-  src: url("../fonts/EFCOBrookshireRegular.ttf");
+  src: url("./assets/fonts/EFCO Brookshire Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,4 +36,21 @@
   right: 0;
   bottom: 0;
   border: 0;
+}
+
+bg-primary {
+  background-color: var(--color-primary);
+}
+
+bg-secondary {
+  background-color: var(--color-secondary);
+}
+bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+bg-assistant {
+  background-color: var(--color-assistant);
+}
+bg-beige {
+  background-color: var(--color-beige);
 }
