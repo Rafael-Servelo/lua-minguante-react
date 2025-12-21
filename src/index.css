@@ -4,16 +4,14 @@
 
 @font-face {
   font-family: "Brookshire";
-  src: url("../fonts/EFCOBrookshireRegular.ttf");
+  src: url("./assets/fonts/EFCO Brookshire Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --color-primary: #7d4ab3;
-  --color-secondary: #c25968;
-  --color-tertiary: #efe1c7;
-  --color-assistant: #b66e82;
+  --color-purple: #7d4ab3;
+  --color-rose: #c25968;
   --color-beige: #efe1c7;
   --color-black: #202221;
   --color-black-1: #20222150;
@@ -36,4 +34,34 @@
   right: 0;
   bottom: 0;
   border: 0;
+}
+
+.text-header {
+  font-family: var(--font-header) !important;
+}
+.text-title {
+  font-family: var(--font-title) !important;
+}
+.text-body {
+  font-family: var(--font-body) !important;
+}
+
+.bg-purple {
+  background-color: var(--color-purple) !important;
+}
+.bg-rose {
+  background-color: var(--color-rose) !important;
+}
+.bg-beige {
+  background-color: var(--color-beige) !important;
+}
+
+.text-purple {
+  color: var(--color-purple) !important;
+}
+.text-rose {
+  color: var(--color-rose) !important;
+}
+.text-beige {
+  color: var(--color-beige) !important;
 }
