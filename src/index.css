@@ -36,23 +36,6 @@
   border: 0;
 }
 
-<<<<<<< HEAD
-bg-primary {
-  background-color: var(--color-primary);
-}
-
-bg-secondary {
-  background-color: var(--color-secondary);
-}
-bg-tertiary {
-  background-color: var(--color-tertiary);
-}
-bg-assistant {
-  background-color: var(--color-assistant);
-}
-bg-beige {
-  background-color: var(--color-beige);
-=======
 .text-header {
   font-family: var(--font-header) !important;
 }
@@ -81,5 +64,4 @@ bg-beige {
 }
 .text-beige {
   color: var(--color-beige) !important;
->>>>>>> b18a32e654f02b2bbb4e6f6a6d02feaca7b730ad
 }
