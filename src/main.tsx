@@ -1,9 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  Navigate,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
-import Count from "./components/Count.tsx";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/count",
-    element: <Count />,
+    path: "*",
+    element: <Navigate to="/" replace />,
   },
 ]);
 
