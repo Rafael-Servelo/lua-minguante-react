@@ -1,9 +1,17 @@
 import { v4 as uuidv4 } from "uuid";
 
-const myID = uuidv4();
-
 function Body() {
-  return <div>Body - {myID.split("-")[4]}</div>;
+  return (
+    <div className="bg-beige p-2">
+      {[
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ].map((item) => (
+        <div className="p-2 m-2 border-2" key={item}>
+          Produto {item} - ID: {uuidv4().split("-")[0]}
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default Body;

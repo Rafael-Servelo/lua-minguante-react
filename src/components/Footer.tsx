@@ -14,7 +14,7 @@ const mockList = [
 
 function Footer() {
   return (
-    <div className="w-screen bg-purple text-white px-8 py-8 mt-8 text-body">
+    <div className="w-screen bg-purple text-white px-8 py-8 text-body">
       <div className="info flex flex-col sm:flex-row gap-8 sm:justify-between sm:w-full mb-4">
         <div className="category sm:sm:w-1/3">
           <div className="font-bold text-xl">Categorias</div>
@@ -44,11 +44,11 @@ function Footer() {
         <div className="contact sm:w-1/3">
           <div className="font-bold text-xl">Contato</div>
           <Divider />
-          <div className="text-start">
+          <div className="flex flex-col gap-2 text-sm">
             <div className="flex gap-2">
               <Icon
                 path={mdiPhone}
-                title="User Profile"
+                title="Telefone"
                 size={1}
                 className="text-rose"
               ></Icon>
@@ -60,7 +60,7 @@ function Footer() {
             <div className="flex gap-2">
               <Icon
                 path={mdiEmail}
-                title="User Profile"
+                title="E-mail"
                 size={1}
                 className="text-rose"
               ></Icon>
@@ -77,7 +77,7 @@ function Footer() {
             <div className="flex gap-2">
               <Icon
                 path={mdiInstagram}
-                title="User Profile"
+                title="Instagram"
                 size={1}
                 className="text-rose"
               ></Icon>
@@ -95,7 +95,7 @@ function Footer() {
             <div className="flex gap-2">
               <Icon
                 path={mdiWhatsapp}
-                title="User Profile"
+                title="WhatsApp"
                 size={1}
                 className="text-rose"
               ></Icon>
