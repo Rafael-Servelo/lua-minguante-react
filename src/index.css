@@ -10,8 +10,8 @@
 }
 
 :root {
-  --color-purple: #7d4ab3;
-  --color-rose: #c25968;
+  --color-purple: #7c4cb2;
+  --color-rose: #ea7d7e;
   --color-beige: #efe1c7;
   --color-black: #202221;
   --color-black-1: #20222150;
@@ -23,16 +23,6 @@
   --font-body: "M PLUS Rounded 1c", sans-serif;
 }
 
-.text-header {
-  font-family: var(--font-header) !important;
-}
-.text-title {
-  font-family: var(--font-title) !important;
-}
-.text-body {
-  font-family: var(--font-body) !important;
-}
-
 .bg-purple {
   background-color: var(--color-purple) !important;
 }
@@ -41,6 +31,9 @@
 }
 .bg-beige {
   background-color: var(--color-beige) !important;
+}
+.bg-coal {
+  background-color: var(--color-black) !important;
 }
 
 .text-purple {
@@ -51,4 +44,16 @@
 }
 .text-beige {
   color: var(--color-beige) !important;
+}
+.text-coal {
+  color: var(--color-black) !important;
+}
+.text-header {
+  font-family: var(--font-header) !important;
+}
+.text-title {
+  font-family: var(--font-title) !important;
+}
+.text-body {
+  font-family: var(--font-body) !important;
 }

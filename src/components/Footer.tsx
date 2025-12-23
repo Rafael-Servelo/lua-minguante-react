@@ -1,5 +1,16 @@
 import Icon from "@mdi/react";
 import { mdiPhone, mdiEmail, mdiInstagram, mdiWhatsapp } from "@mdi/js";
+import Divider from "./Divider";
+
+const mockList = [
+  "Acessorios",
+  "Capilar",
+  "Facial",
+  "Labial",
+  "Olhos",
+  "Corporal",
+  "Intimo",
+];
 
 function Footer() {
   return (
@@ -7,71 +18,57 @@ function Footer() {
       <div className="info flex flex-col sm:flex-row gap-8 sm:justify-between sm:w-full mb-4">
         <div className="category sm:sm:w-1/3">
           <div className="font-bold text-xl">Categorias</div>
-          <hr className="h-px my-4 bg-purple-400 border-0"></hr>
+          <Divider />
           <ul className="list-disc ml-5 text-white">
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=acessorios">Acessorios</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=capilar">Capilar</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=facial">Facial</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=labial">Labial</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=olhos">Olhos</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=corporal">Corporal</a>
-            </li>
-            <li className="opacity-60 hover:opacity-100">
-              <a href="/?group=intimo">Intimo</a>
-            </li>
+            {mockList.map((item) => (
+              <li key={item} className="opacity-60 hover:opacity-100">
+                <a href={`/?group=${item.toLowerCase()}`}>{item}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="about sm:w-1/3">
           <div className="font-bold text-xl">Sobre a loja</div>
           <div>
-            <hr className="h-px my-4 bg-purple-400 border-0"></hr>
+            <Divider />
           </div>
           <div className="text-sm">
-            ✨ Lua Minguante Cosméticos ✨ A Beleza começa com o autocuidado. Na
-            Lua Minguante, acreditamos que cuidar de si deve ser um ritual
-            diário — leve, especial e ao seu alcance. Por isso, oferecemos
-            cosméticos de qualidade, com preços justos, para você se sentir
-            especial todos os dias. 🌙 Qualidade que encanta e preço que cabe no
-            seu bolso.
+            <strong>✨ Lua Minguante Cosméticos ✨</strong>
+            <br />A Beleza começa com o autocuidado. Na Lua Minguante,
+            acreditamos que cuidar de si deve ser um ritual diário — leve,
+            especial e ao seu alcance. Por isso, oferecemos cosméticos de
+            qualidade, com preços justos, para você se sentir especial todos os
+            dias. 🌙 Qualidade que encanta e preço que cabe no seu bolso.
           </div>
         </div>
         <div className="contact sm:w-1/3">
           <div className="font-bold text-xl">Contato</div>
-          <hr className="h-px my-4 bg-purple-400 border-0"></hr>
+          <Divider />
           <div className="text-start">
             <div className="flex gap-2">
               <Icon
                 path={mdiPhone}
                 title="User Profile"
                 size={1}
-                color="white"
+                className="text-rose"
               ></Icon>
               <div>Telefone:</div>
-              <span>(11) 99935-8498</span>
+              <a className="hover:underline" href="tel://11999358498">
+                (11) 99935-8498
+              </a>
             </div>
             <div className="flex gap-2">
               <Icon
                 path={mdiEmail}
                 title="User Profile"
                 size={1}
-                color="white"
+                className="text-rose"
               ></Icon>
               <div>Email:</div>
               <span>
                 <a
                   href="mailto:isabellazoccoler@gmail.com"
-                  className="underline"
+                  className="hover:underline"
                 >
                   isabellazoccoler@gmail.com
                 </a>
@@ -82,13 +79,14 @@ function Footer() {
                 path={mdiInstagram}
                 title="User Profile"
                 size={1}
-                color="white"
+                className="text-rose"
               ></Icon>
               <div>Instagram:</div>
               <span>
                 <a
                   href="https://www.instagram.com/luaminguanteloja/"
                   target="_blank"
+                  className="hover:underline"
                 >
                   @luaminguanteloja
                 </a>
@@ -99,14 +97,14 @@ function Footer() {
                 path={mdiWhatsapp}
                 title="User Profile"
                 size={1}
-                color="white"
+                className="text-rose"
               ></Icon>
               <div>WhatsApp:</div>
               <a
                 href="https://wa.me/5511999358498?text=Ol%C3%A1%20eu%20vim%20pelo%20site%20da%20Loja%20Minguante!"
                 target="_blank"
               >
-                <span>(11) 99935-8498</span>
+                <span className="hover:underline">(11) 99935-8498</span>
               </a>
             </div>
           </div>
@@ -114,10 +112,12 @@ function Footer() {
       </div>
       <div>
         <div className="copyright">
-          <hr className="h-px my-4 bg-purple-400 border-0"></hr>
+          <Divider />
           <div className="text-center">
-            <strong>Lua Minguante Cosméticos &copy; </strong>Todos os direitos
-            reservados 2024.
+            <strong className="text-rose">
+              Lua Minguante Cosméticos &copy;{" "}
+            </strong>
+            Todos os direitos reservados 2024.
           </div>
         </div>
       </div>
