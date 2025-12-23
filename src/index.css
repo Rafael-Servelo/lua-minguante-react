@@ -23,7 +23,16 @@
   --font-body: "M PLUS Rounded 1c", sans-serif;
 }
 
-a, a::after, a::before, button, button::after, button::before {
+html {
+  background-color: var(--color-purple);
+}
+
+a,
+a::after,
+a::before,
+button,
+button::after,
+button::before {
   cursor: pointer;
 }
 

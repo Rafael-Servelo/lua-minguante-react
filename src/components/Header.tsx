@@ -18,7 +18,7 @@ function Header() {
         <div className="w-full">
           <div className="flex rounded-md overflow-hidden">
             <input
-              className="bg-beige w-full rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"
+              className="bg-beige w-full rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 text-sm sm:text-md"
               type="text"
               placeholder="O que você está procurando?"
             />
