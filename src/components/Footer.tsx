@@ -14,7 +14,7 @@ const mockList = [
 
 function Footer() {
   return (
-    <div className="w-screen bg-purple text-white px-8 py-8 text-body">
+    <div className="w-full bg-purple text-white px-8 py-8 text-body">
       <div className="info flex flex-col sm:flex-row gap-8 sm:justify-between sm:w-full mb-4">
         <div className="category sm:sm:w-1/3">
           <div className="font-bold text-xl">Categorias</div>
